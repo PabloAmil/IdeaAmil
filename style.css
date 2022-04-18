@@ -93,6 +93,7 @@ h1 {
     grid-area: title;
     color: #fff;
     font-size: 60px;
+    font-weight: 600 !important;
     align-self: center;
     justify-self: center;
     transition-property: text-shadow;
@@ -221,7 +222,6 @@ main {
     color: #fff;
     text-align: center;
     height: 20px;
-    z-index: 20;
     font-size: medium;
 
 }
