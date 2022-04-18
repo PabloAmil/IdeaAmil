@@ -306,9 +306,29 @@ h4 {
     margin-top: 5%;
 }
 
+.d-flex {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
 
+.my-4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 0rem !important; 
+}
 
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: 0 !important;
+    margin-right: auto;
+    margin-left: auto;
+}
 
+.icons {
+    display: contents;
+    
+}
 
 
 /* contacto (main) */
@@ -429,6 +449,11 @@ textarea {
     resize: none;
 }
 
+.divbot {
+    display: flex;
+    justify-content: center;
+}
+
 /* escribir */
 
 
@@ -469,6 +494,9 @@ textarea {
     margin-top: 50px;
 }
 
+.btn-outline-success {
+    background-color: #000;
+}
 
 /* conocenos */
 
@@ -488,7 +516,7 @@ textarea {
 }
 
 
-@media screen and (max-width: 1302px) {
+@media screen and (max-width: 1430px) {
 
     .flex__container__art {
         flex-direction: column;
@@ -594,6 +622,7 @@ textarea {
 
     }
 }
+
 
 
 
