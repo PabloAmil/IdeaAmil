@@ -19,7 +19,8 @@ p {
 
 body {
     background-image: url("./imgenes/612.jpg");
-    min-width: 700px;
+    min-width: 430px;
+    position: relative;
 }
 
 .grid__container {
@@ -54,7 +55,7 @@ ul li {
 .flex__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 30px;
     flex-wrap: wrap;
@@ -70,6 +71,7 @@ button {
 
 .nav__menu__icon {
     display: none;
+
 }
 
 .nav__user__icon {
@@ -84,6 +86,70 @@ button {
     display: none;
 }
 
+
+.responsive__menu__button {
+    background-color: transparent;
+    margin-top: -15px;
+    display: none;
+
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+*/
+
+
+.responsive__menu__button:hover>.navlisres {
+
+    position: absolute;
+    display: flex;
+    
+    
+}
+
+.navlisres {
+
+
+    display: none;
+    margin-bottom: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #000;
+    height: 270px;
+    width: 50%;
+    /* margin-top: 20px; */
+    z-index: 3;
+
+}
+
+.li_a {
+    background-color: #000;
+    display: block;
+    color: #fff;
+    margin-top: 15px;
+}
+
+ol,
+ul {
+    padding-left: 0rem;
+}
+
+button {
+    border: none; 
+}
+
+
+
+
+
+
+
+
+/*
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* title */
 
@@ -141,7 +207,7 @@ main {
 .flex__container__art {
     display: flex;
     flex-direction: row;
-    min-width: 370px;
+    min-width: 320px;
     width: 70%;
     height: auto;
     background-color: #777;
@@ -156,7 +222,7 @@ main {
 
 .flex__container__artB {
     display: flex;
-    min-width: 370px;
+    min-width: 320px;
     width: 70%;
     height: auto;
     background-color: #777;
@@ -334,6 +400,7 @@ h4 {
     justify-content: center;
     margin-top: 1%;
     width: 500px;
+    min-width: 320px;
     height: 600px;
     background-color: #333;
     border: solid #000 3px;
@@ -360,6 +427,7 @@ h4 {
     margin-top: 1%;
     margin-bottom: 169px;
     width: 500px;
+    min-width: 320px;
     height: 550px;
     background-color: #333;
     border: solid #000 3px;
@@ -577,6 +645,13 @@ textarea {
         max-height: 30px;
     }
 
+    .responsive__menu__button {
+        background-color: transparent;
+        margin-top: -15px;
+        display: inline-block;
+
+    }
+
 }
 
 @media screen and (max-width: 802px) {
@@ -587,17 +662,48 @@ textarea {
         justify-content: space-evenly;
     }
 
-    @media screen and (max-width: 500px) {
-        .flex__container__art {
-            flex-direction: column;
-            width: 90%;
-        }
+}
 
-        .flex__container__artB {
-            flex-direction: column;
-            width: 90%;
-        }
+
+
+@media screen and (max-width: 500px) {
+
+    .flex__container__art {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .flex__container__artB {
+        flex-direction: column;
+        width: 90%;
     }
 
 
+    .formCont2 {
+        
+        max-width: 320px;
+      
+    }
+
+    .formCont {
+        max-width: 320px;
+        
+    }
+
+    body {
+        max-width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+    
+    .formInput .formInput2 .formInput3 {
+        width: 320px;
+    }
+
+    textarea {
+        max-width: 440px;
+    }
 }
+
