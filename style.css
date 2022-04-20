@@ -33,12 +33,22 @@ body {
         "footer footer footer footer footer footer";
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 100px 160px 3fr 20px 170px 100px;
-    align-content: center
+    align-content: center;
+    
 }
 
 header {
+
+    position: relative;
+    z-index: 2;
     grid-area: nav;
     background: linear-gradient(to right, red, black, black, black, black, black, red);
+    
+}
+
+.grid__child {
+    position: relative;
+    z-index: 4;
 }
 
 a {
@@ -53,12 +63,15 @@ ul li {
 }
 
 .flex__container {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 30px;
     flex-wrap: wrap;
+    z-index: 5;
+    
 }
 
 input {
@@ -88,6 +101,7 @@ button {
 
 
 .responsive__menu__button {
+    
     background-color: transparent;
     margin-top: -15px;
     display: none;
@@ -97,15 +111,16 @@ button {
 .responsive__menu__button:hover>.navlisres {
 
     position: absolute;
-    display: flex;
+    display: flex; 
+    transform: translateY(105vh); 
     
     
 }
 
 .navlisres {
 
-
-    display: none;
+    position: absolute;
+    display: flex; 
     margin-bottom: 15px;
     flex-direction: column;
     align-items: flex-start;
@@ -114,7 +129,11 @@ button {
     height: 270px;
     width: 50%;
     /* margin-top: 20px; */
-    z-index: 3;
+    z-index: -1;
+    left: 0;
+    top: -100vh; 
+    transition-property: transform;
+    transition-duration: .3s;
 
 }
 
@@ -133,6 +152,7 @@ ul {
 button {
     border: none; 
 }
+
 
 
 
