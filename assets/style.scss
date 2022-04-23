@@ -46,9 +46,14 @@ header {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: $color4white;
   margin-left: 15px;
-  font-size: 20px; }
+  font-size: 20px;
+  &:hover {
+    
+    color: $color4white;
+    text-shadow: 4px 4px 15px $color4white;
+  } }
 
 ul li {
   display: inline-block; }
@@ -64,7 +69,9 @@ ul li {
   z-index: 5; }
 
 input {
-  padding: 7px; }
+padding: 7px;
+outline: none;
+  }
 
 button {
   padding: 11px; }
@@ -98,7 +105,7 @@ button {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background-color: #000;
+  background-color: $color3black;
   height: 270px;
   width: 50%;
   margin-top: 20px;
@@ -112,9 +119,9 @@ button {
 
   position: relative;
   z-index: 1;
-  background-color: black;
+  background-color: $color3black;
   display: block;
-  color: #fff;
+  color: $color4white;
   margin-top: 15px; }
 
 ol,
@@ -127,7 +134,7 @@ button {
 /* title */
 h1 {
   grid-area: title;
-  color: #fff;
+  color: $color4white;
   font-size: 80px;
   font-weight: 600 !important;
   align-self: center;
@@ -168,11 +175,11 @@ main {
   min-width: 320px;
   width: 70%;
   height: auto;
-  background-color: #777;
+  background-color: $backgcolor2;
   border-radius: 15px;
   text-align: justify;
   padding: 1%;
-  border: solid #000 3px;
+  border: solid $color3black 3px;
   margin-top: 1%;
   margin-bottom: 2%;
   margin-left: 1%; }
@@ -182,11 +189,11 @@ main {
   min-width: 320px;
   width: 70%;
   height: auto;
-  background-color: #777;
+  background-color: $backgcolor2;
   border-radius: 15px;
   text-align: justify;
   padding: 1%;
-  border: solid #000 3px;
+  border: solid $color3black 3px;
   margin-top: 1%;
   margin-bottom: 2%;
   margin-left: auto;
@@ -195,7 +202,7 @@ main {
 .imgProp {
   height: 300px;
   width: 400px;
-  border-right: solid #000 5px;
+  border-right: solid $color3black 5px;
   margin-right: 2%; }
 
 .flex__container__txt {
@@ -207,8 +214,8 @@ main {
 /*aside*/
 .aside__grid__title {
   grid-area: asidet;
-  background-color: #333;
-  color: #fff;
+  background-color: $backgcolor;
+  color: $color4white;
   text-align: center;
   height: 20px;
   font-size: medium; }
@@ -218,8 +225,8 @@ aside {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: #333;
-  color: #fff;
+  background-color: $backgcolor;
+  color: $color4white;
   margin-bottom: -13px; }
 
 iframe {
@@ -246,8 +253,8 @@ h6 {
 /* footer */
 footer {
   grid-area: footer;
-  background: linear-gradient(to bottom, #333, #000);
-  color: #fff;
+  background: linear-gradient(to bottom, $backgcolor, $color3black);
+  color: $color4white;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -255,7 +262,7 @@ footer {
   bottom: 0;
   position: fixed;
   height: 110px;
-  border-top: 2px solid #000;
+  border-top: 2px solid $color3black;
   box-sizing: unset; }
 
 .ftitle {
@@ -326,8 +333,8 @@ h4 {
   width: 500px;
   min-width: 320px;
   height: 600px;
-  background-color: #333;
-  border: solid #000 3px;
+  background-color: $backgcolor;
+  border: solid $color3black 3px;
   border-radius: 15px;
   padding-left: 25px; }
 
@@ -343,8 +350,8 @@ h4 {
   width: 500px;
   min-width: 320px;
   height: 550px;
-  background-color: #333;
-  border: solid #000 3px;
+  background-color: $backgcolor;
+  border: solid $color3black 3px;
   border-radius: 15px;
   justify-content: space-around;
   align-items: center;
@@ -352,7 +359,7 @@ h4 {
 
 .formInput {
   background-color: #555;
-  color: #fff;
+  color: $color4white;
   width: 90%;
   margin-top: 15px;
   padding: 12px;
@@ -362,7 +369,7 @@ h4 {
 
 .formInput2 {
   background-color: #555;
-  color: #fff;
+  color: $color4white;
   width: 90%;
   margin-top: 15px;
   padding: 12px;
@@ -379,7 +386,7 @@ h4 {
   border-radius: 15px; }
 
 .formInput3 {
-  color: #fff;
+  color: $color4white;
   width: 100%;
   margin-top: 15px;
   padding: 12px;
@@ -387,7 +394,7 @@ h4 {
 
 .formInput4 {
   background-color: #555;
-  color: #fff;
+  color: $color4white;
   width: 90%;
   margin-top: 5px;
   padding: 12px;
@@ -397,7 +404,7 @@ h4 {
   margin-bottom: 10px; }
 
 .labelclass {
-  color: #fff;
+  color: $color4white;
   margin-left: 15px; }
 
 textarea {
@@ -409,7 +416,7 @@ textarea {
 
 /* escribir */
 .subtituloRew {
-  color: #fff;
+  color: $color4white;
   text-align: center;
   font-size: 20px; }
 
@@ -420,8 +427,8 @@ textarea {
   justify-content: center; }
 
 .reseña textarea {
-  background-color: #333;
-  color: #fff;
+  background-color: $backgcolor;
+  color: $color4white;
   padding: 15px;
   font-size: large;
   margin-left: auto;
@@ -437,16 +444,16 @@ textarea {
   margin-top: 50px; }
 
 .btn-outline-success {
-  background-color: #000; }
+  background-color: $color3black; }
 
 /* conocenos */
 .knowContainer {
   display: flex;
   flex-direction: row;
-  color: #fff;
+  color: $color4white;
   height: auto;
   width: 65%;
-  background-color: #333;
+  background-color: $backgcolor;
   border-radius: 15px;
   border: 2px solid #1fc;
   margin-left: auto;
@@ -489,8 +496,8 @@ textarea {
   .aside__grid__item__container:nth-child(7) {
     display: none; }
   .reseña textarea {
-    background-color: #333;
-    color: #fff;
+    background-color: $backgcolor;
+    color: $color4white;
     padding: 15px;
     font-size: large;
     width: 500px; }

@@ -38,6 +38,9 @@ a {
   color: #fff;
   margin-left: 15px;
   font-size: 20px; }
+  a:hover {
+    color: #fff;
+    text-shadow: 4px 4px 15px #fff; }
 
 ul li {
   display: inline-block; }
@@ -53,7 +56,8 @@ ul li {
   z-index: 5; }
 
 input {
-  padding: 7px; }
+  padding: 7px;
+  outline: none; }
 
 button {
   padding: 11px; }
@@ -100,7 +104,7 @@ button {
 .li_a {
   position: relative;
   z-index: 1;
-  background-color: black;
+  background-color: #000;
   display: block;
   color: #fff;
   margin-top: 15px; }
