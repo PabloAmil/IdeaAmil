@@ -154,7 +154,7 @@ h1 {
 main {
   grid-area: main; }
 
-.flex__container__art {
+.flex__container__art, .flex__container__artB {
   display: flex;
   flex-direction: row;
   min-width: 320px;
@@ -170,23 +170,12 @@ main {
   margin-left: 1%; }
 
 .flex__container__artB {
-  display: flex;
-  min-width: 320px;
-  width: 70%;
-  height: auto;
-  background-color: #777;
-  border-radius: 15px;
-  text-align: justify;
-  padding: 1%;
-  border: solid #000 3px;
-  margin-top: 1%;
-  margin-bottom: 2%;
   margin-left: auto;
   margin-right: 1%; }
 
 .imgProp {
-  height: 300px;
   width: 400px;
+  height: 300px;
   border-right: solid #000 5px;
   margin-right: 2%; }
 
@@ -267,8 +256,10 @@ footer {
   margin-left: 20px; }
 
 .png {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+  /*width: 25px;
+  height: 25px; */
   justify-self: center;
   display: inline-block; }
 
@@ -305,7 +296,7 @@ h4 {
   display: contents; }
 
 /* contacto (main) */
-.formCont {
+.formCont, .formCont2 {
   grid-area: main;
   margin-left: auto;
   margin-right: auto;
@@ -325,19 +316,7 @@ h4 {
 
 /* registro (main) */
 .formCont2 {
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1%;
   margin-bottom: 169px;
-  width: 500px;
-  min-width: 320px;
-  height: 550px;
-  background-color: #333;
-  border: solid #000 3px;
-  border-radius: 15px;
   justify-content: space-around;
   align-items: center;
   padding-left: 23px; }
@@ -367,7 +346,6 @@ h4 {
   margin-left: 38%;
   width: 25%;
   height: 50px;
-  /* background-color: #45f;/* color: #fff; */
   border-radius: 15px; }
 
 .formInput3 {
@@ -381,9 +359,9 @@ h4 {
   background-color: #555;
   color: #fff;
   width: 90%;
-  margin-top: 5px;
   padding: 12px;
   border-bottom: solid #1fc 3px;
+  margin-top: 5px;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px; }
@@ -445,7 +423,7 @@ textarea {
   margin-right: auto; }
 
 @media screen and (max-width: 1430px) {
-  .flex__container__art {
+  .flex__container__art, .flex__container__artB {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto; }
@@ -465,9 +443,9 @@ textarea {
     height: 50px;
     margin-left: 5%; }
   .nav__user__icon {
-    display: inline-block;
-    width: 50px;
-    height: 50px; }
+    width: 45px;
+    height: 45px;
+    display: inline-block; }
   .nav__login__container {
     margin-right: 5%; }
   .grid__container {
@@ -504,7 +482,7 @@ textarea {
     justify-content: space-evenly; } }
 
 @media screen and (max-width: 500px) {
-  .flex__container__art {
+  .flex__container__art, .flex__container__artB {
     flex-direction: column;
     width: 90%; }
   .flex__container__artB {
@@ -512,7 +490,7 @@ textarea {
     width: 90%; }
   .formCont2 {
     max-width: 320px; }
-  .formCont {
+  .formCont, .formCont2 {
     max-width: 320px; }
   body {
     max-width: 100%; }
