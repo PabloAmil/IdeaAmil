@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="indie, videojuegos, reviews, deadcells, noticias, pixel-art, juego, items, corto, 2D">
+    <meta name="keywords"
+        content="indie, videojuegos, reviews, deadcells, noticias, pixel-art, juego, items, corto, 2D">
     <meta name="description" content="Lee reviews de jugadores como tú sobre los videojuegos indie que más te interesen. Además puedes escribir tus propias reseñas y recomendar (o no) 
     los que hayas jugado!!">
     <meta name="author" content="Pablo Amil">
@@ -53,8 +54,22 @@
             </form>
 
             <div class="nav__login__container">
-                <button class="responsive__menu__button"><img src="../iconos/usuario.svg" alt="Usuario"
-                        class="nav__user__icon"></button>
+                <button class="responsive__user__button"><img src="../iconos/usuario.svg" alt="Usuario"
+                        class="nav__user__icon">
+                    <ul class="userlisres">
+
+                        <li>
+                            <form action=""><input type="text" placeholder="Usuario" class="loginp"></form>
+                        </li>
+                        <li>
+                            <form action=""><input type="password" placeholder="Contraseña" class="loginp"></form>
+                        </li>
+                        <li>
+                            <form action=""><input type="button" value="Log in!" class="loginpbtn"></form>
+                        </li>
+                        <li><a href="./registro.html" class="li_a">Registrate</a></li>
+                    </ul>
+                </button>
                 <form action="" class="navLogin">
                     <input type="text" placeholder="Usuario">
                     <input type="password" name="" id="" placeholder="Contraseña">
@@ -128,7 +143,8 @@
                         </svg></a>
                     </li>
                     <li class="ms-3"><a href="https://facebook.com" target="_blank"> <img class="png"
-                                src="../iconos/fb.svg" alt="facebook"></a></li><svg class="bi" width="24" height="24"></svg></a>
+                                src="../iconos/fb.svg" alt="facebook"></a></li><svg class="bi" width="24"
+                        height="24"></svg></a>
                     </li>
                 </ul>
             </div>

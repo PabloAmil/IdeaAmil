@@ -1,10 +1,9 @@
+$fuente: 'Josefin Sans',
+sans-serif;
 
 
-
-$fuente: 'Josefin Sans', sans-serif;
-
-
-$fuentetitulo: 'Bebas Neue', cursive;
+$fuentetitulo: 'Bebas Neue',
+cursive;
 
 
 $backgcolor: #333;
@@ -17,8 +16,9 @@ $color4white: #fff;
 
 $backgcolor3: #555;
 
-$inputmodel: (
-  background-color: $backgcolor3,
+$blacktransp: rgba(0, 0, 0, 0.904);
+
+$inputmodel: (background-color: $backgcolor3,
   color: $color4white,
   width: 90%,
   margin-top: 15px,
@@ -27,9 +27,3 @@ $inputmodel: (
   border-bottom: solid #1fc 3px,
   margin-bottom: 15px,
 )
-
-
-
-
-
-

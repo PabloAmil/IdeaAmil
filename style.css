@@ -18,7 +18,7 @@ body {
 
 .grid__container {
   display: grid;
-  grid-template-areas: "nav nav nav nav nav nav" "title title title title title title" "main main main main main main" "asidet asidet asidet asidet asidet asidet" "aside aside aside aside aside aside" "footer footer footer footer footer footer";
+  grid-template-areas: "nav nav nav nav nav nav" "title title title title title title" "main main main main main main" "asidet asidet asidet asidet asidet asidet" "aside aside aside aside aside aside" "footer footer footer footer footer footer";
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 100px 160px 3fr 20px 170px 100px;
   align-content: center; }
@@ -59,6 +59,13 @@ input {
   padding: 7px;
   outline: none; }
 
+.loginp {
+  background-color: rgba(0, 0, 0, 0.904);
+  border: none;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 15px; }
+
 button {
   padding: 11px; }
 
@@ -74,37 +81,36 @@ button {
 .header__responsive {
   display: none; }
 
-.responsive__menu__button {
+.responsive__menu__button, .responsive__user__button {
   background-color: transparent;
   margin-top: -15px;
   display: none; }
 
-.responsive__menu__button:hover > .navlisres {
+.responsive__menu__button:hover > .navlisres, .responsive__user__button:hover > .navlisres, .responsive__menu__button:hover > .userlisres, .responsive__user__button:hover > .userlisres {
   position: absolute;
   display: flex;
-  transform: translateX(100vh); }
+  transform: translateX(300vh); }
 
-.navlisres {
+.navlisres, .userlisres {
   position: absolute;
   display: flex;
   margin-bottom: 15px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.904);
   height: 270px;
-  width: 50%;
+  width: 100%;
   margin-top: 20px;
   z-index: 1;
   margin-left: 0px;
-  left: -100vh;
+  left: -300vh;
   transition-property: transform;
   transition-duration: .3s; }
 
 .li_a {
   position: relative;
   z-index: 1;
-  background-color: #000;
   display: block;
   color: #fff;
   margin-top: 15px; }
@@ -420,7 +426,8 @@ textarea {
   border-radius: 15px;
   border: 2px solid #1fc;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 25px; }
 
 @media screen and (max-width: 1430px) {
   .flex__container__art, .flex__container__artB {
@@ -469,7 +476,7 @@ textarea {
   .menu__img {
     max-width: 30px;
     max-height: 30px; }
-  .responsive__menu__button {
+  .responsive__menu__button, .responsive__user__button {
     background-color: transparent;
     margin-top: -15px;
     display: inline-block; } }
