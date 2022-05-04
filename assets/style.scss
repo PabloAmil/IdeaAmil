@@ -25,7 +25,7 @@ p {
 /* header */
 body {
   background-image: url("./imgenes/612.jpg");
-  min-width: 430px;
+  //min-width: 430px;
   position: relative;
   z-index: 10;
 }
@@ -89,14 +89,16 @@ input {
 }
 
 .loginp {
-  background-color: $blacktransp;
-  border: none;
+  background-color: none;
+  border: none; 
   color: $color4white;
   border-bottom: 2px solid $color4white;
   margin-bottom: 15px;
 }
 
-
+.barshrink {
+  flex-shrink: 3;
+}
 
 
 button {
@@ -228,7 +230,7 @@ main {
 .flex__container__art {
   display: flex;
   flex-direction: row;
-  min-width: 320px;
+  //min-width: 320px;
   width: 70%;
   height: auto;
   background-color: $backgcolor2;
@@ -401,7 +403,7 @@ h4 {
   justify-content: center;
   margin-top: 1%;
   width: 500px;
-  min-width: 320px;
+  
   height: 600px;
   background-color: $backgcolor;
   border: solid $color3black 3px;
@@ -510,7 +512,6 @@ textarea {
 
 .reseña button {
   padding: 11px;
-  width: 15%;
   align-self: center;
   margin-top: 50px;
 }
@@ -622,25 +623,36 @@ textarea {
     text-align: center;
     justify-content: space-evenly;
   }
+
+
 }
 
 @media screen and (max-width: 500px) {
   .flex__container__art {
     flex-direction: column;
-    width: 90%;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
 
   .flex__container__artB {
     flex-direction: column;
-    width: 90%;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
 
   .formCont2 {
-    max-width: 320px;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+
   }
 
   .formCont {
-    max-width: 320px;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
 
   body {
@@ -657,5 +669,18 @@ textarea {
 
   textarea {
     max-width: 440px;
+  }
+  .navForm {
+    width: 50%;
+  }
+
+  .barshrink {
+    width: 100%;
+  }
+
+  .knowContainer {
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 98%;
   }
 }
