@@ -59,7 +59,7 @@ input {
   outline: none; }
 
 .loginp {
-  background-color: none;
+  background-color: #000;
   border: none;
   color: #fff;
   border-bottom: 2px solid #fff;
