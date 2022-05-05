@@ -25,7 +25,6 @@ p {
 /* header */
 body {
   background-image: url("./imgenes/612.jpg");
-  //min-width: 430px;
   position: relative;
   z-index: 10;
 }
@@ -39,7 +38,7 @@ body {
     "aside aside aside aside aside aside"
     "footer footer footer footer footer footer";
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 100px 160px 3fr 20px 170px 100px;
+  grid-template-rows: 100px 160px 3fr 20px 190px 100px;
   align-content: center;
 }
 
@@ -230,7 +229,6 @@ main {
 .flex__container__art {
   display: flex;
   flex-direction: row;
-  //min-width: 320px;
   width: 70%;
   height: auto;
   background-color: $backgcolor2;
@@ -475,10 +473,6 @@ h4 {
   margin-left: 15px;
 }
 
-textarea {
-  // resize: none;
-}
-
 .divbot {
   display: flex;
   justify-content: center;
@@ -487,7 +481,7 @@ textarea {
 /* escribir */
 .subtituloRew {
 
-  
+
   height: auto;
   background-color: #020202ec;
   color: $color4white;
@@ -500,7 +494,7 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
 }
 
 .reseña textarea {

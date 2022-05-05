@@ -19,7 +19,7 @@ body {
   display: grid;
   grid-template-areas: "nav nav nav nav nav nav" "title title title title title title" "main main main main main main" "asidet asidet asidet asidet asidet asidet" "aside aside aside aside aside aside" "footer footer footer footer footer footer";
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 100px 160px 3fr 20px 170px 100px;
+  grid-template-rows: 100px 160px 3fr 20px 190px 100px;
   align-content: center; }
 
 header {
