@@ -376,15 +376,14 @@ h4 {
   color: #fff;
   margin-left: 15px; }
 
-textarea {
-  resize: none; }
-
 .divbot {
   display: flex;
   justify-content: center; }
 
 /* escribir */
 .subtituloRew {
+  height: auto;
+  background-color: #020202ec;
   color: #fff;
   text-align: center;
   font-size: 20px; }
@@ -403,7 +402,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
-  width: 900px;
+  width: 60%;
   height: 500px; }
 
 .reseña button {
@@ -514,6 +513,8 @@ textarea {
     width: 320px; }
   textarea {
     max-width: 440px; }
+  .reseña textarea {
+    width: 98%; }
   .navForm {
     width: 50%; }
   .barshrink {
